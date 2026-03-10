@@ -1,0 +1,90 @@
+{
+  "admins": [
+    {
+      "id": "superadmin1",
+      "name": "Super Admin",
+      "email": "superadmin@bloodbud.com",
+      "hospitalId": "",
+      "role": "super_admin",
+      "isActive": true,
+      "isApproved": true,
+      "createdAt": {"seconds": 1700000000, "nanoseconds": 0},
+      "updatedAt": {"seconds": 1700000000, "nanoseconds": 0}
+    },
+    {
+      "id": "admin1",
+      "name": "Hospital Admin",
+      "email": "admin@cityhospital.com",
+      "hospitalId": "hosp1",
+      "role": "admin",
+      "isActive": true,
+      "isApproved": true,
+      "createdAt": {"seconds": 1700000000, "nanoseconds": 0},
+      "updatedAt": {"seconds": 1700000000, "nanoseconds": 0}
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "hosp1",
+      "name": "City General Hospital",
+      "address": "123 Main St",
+      "city": "Metropolis",
+      "state": "State",
+      "pincode": "123456",
+      "contactNumber": "+1234567890",
+      "email": "info@cityhospital.com",
+      "availableBloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"],
+      "isActive": true,
+      "isApproved": true,
+      "createdAt": {"seconds": 1700000000, "nanoseconds": 0},
+      "updatedAt": {"seconds": 1700000000, "nanoseconds": 0}
+    },
+    {
+      "id": "hosp2",
+      "name": "Metro Blood Bank",
+      "address": "456 Oak Ave",
+      "city": "Metropolis",
+      "state": "State",
+      "pincode": "123457",
+      "contactNumber": "+1987654321",
+      "email": "contact@metrobloodbank.org",
+      "availableBloodGroups": ["A+", "B+", "O+", "AB+"],
+      "isActive": true,
+      "isApproved": false,
+      "createdAt": {"seconds": 1700000000, "nanoseconds": 0},
+      "updatedAt": {"seconds": 1700000000, "nanoseconds": 0}
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "bloodGroup": "A+",
+      "contactNumber": "+1234567890",
+      "address": "789 Elm St",
+      "city": "Metropolis",
+      "state": "State",
+      "pincode": "123458",
+      "isActive": true,
+      "isApproved": true,
+      "createdAt": {"seconds": 1700000000, "nanoseconds": 0},
+      "updatedAt": {"seconds": 1700000000, "nanoseconds": 0}
+    },
+    {
+      "id": "user2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "bloodGroup": "B-",
+      "contactNumber": "+1987654321",
+      "address": "321 Pine St",
+      "city": "Metropolis",
+      "state": "State",
+      "pincode": "123459",
+      "isActive": true,
+      "isApproved": false,
+      "createdAt": {"seconds": 1700000000, "nanoseconds": 0},
+      "updatedAt": {"seconds": 1700000000, "nanoseconds": 0}
+    }
+  ]
+}

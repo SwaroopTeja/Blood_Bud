@@ -1,0 +1,38 @@
+[
+  {
+    "id": "h1",
+    "name": "City General Hospital",
+    "address": "123 Main Street",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "pincode": "560001",
+    "contactNumber": "+918012345678",
+    "email": "info@citygeneral.com",
+    "availableBloodGroups": ["A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"],
+    "isActive": true
+  },
+  {
+    "id": "h2",
+    "name": "Life Care Medical Center",
+    "address": "456 Park Avenue",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400001",
+    "contactNumber": "+918023456789",
+    "email": "contact@lifecare.com",
+    "availableBloodGroups": ["A+", "B+", "O+", "AB+"],
+    "isActive": true
+  },
+  {
+    "id": "h3",
+    "name": "Unity Health Hospital",
+    "address": "789 MG Road",
+    "city": "Delhi",
+    "state": "Delhi",
+    "pincode": "110001",
+    "contactNumber": "+919876543210",
+    "email": "unity@healthcare.com",
+    "availableBloodGroups": ["A-", "B-", "O-", "AB-"],
+    "isActive": true
+  }
+]

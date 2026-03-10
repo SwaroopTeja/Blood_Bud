@@ -1,0 +1,317 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">BloodBud</string>
+    
+    <!-- Common Strings -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="update">Update</string>
+    <string name="updating">Updating...</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="email">Email</string>
+    <string name="all">All</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+    <string name="home">Home</string>
+    <string name="donate">Donate</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="donor_dashboard">Donor Dashboard</string>
+    
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="signing_in">Signing in...</string>
+    <string name="sign_in_failed">Sign in failed. Please check your credentials.</string>
+    <string name="fill_all_fields">Please fill in all the details</string>
+    <string name="create_account">Create Account</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_instructions">Enter your email address and we\'ll send you a link to reset your password</string>
+    <string name="reset_password_email_sent">Password reset email sent. Please check your inbox.</string>
+    
+    <!-- Registration -->
+    <string name="register_as">Register As</string>
+    <string name="select_account_type">Select your account type to continue</string>
+    <string name="donor_recipient">Donor / Recipient</string>
+    <string name="donor_recipient_description">I want to donate blood or request blood donations</string>
+    <string name="hospital_blood_bank">Hospital / Blood Bank</string>
+    <string name="hospital_blood_bank_description">I represent a hospital or blood bank</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="donor_recipient_icon">Donor/Recipient Icon</string>
+    <string name="hospital_blood_bank_icon">Hospital/Blood Bank Icon</string>
+    <string name="hospital_image">Hospital Image</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="address">Address</string>
+    
+    <!-- Appointment Strings -->
+    <string name="donor">Donor</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="mark_complete">Complete</string>
+    <string name="donation_completed">Donation Completed</string>
+    <string name="donation_cancelled">Donation Cancelled</string>
+    <string name="appointments">Appointments</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="change_password_clicked">Change password clicked</string>
+    <string name="change_password_coming_soon">Change password functionality coming soon</string>
+    <string name="change_password">Change Password</string>
+    <string name="profile_updated_successfully">Profile updated successfully</string>
+    <string name="error_updating_profile">Error updating profile</string>
+    <string name="confirm_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="field_required">This field is required</string>
+    <string name="invalid_pincode">Enter a valid 6-digit pincode</string>
+    <string name="are_you_sure_logout">Are you sure you want to logout?</string>
+    
+    <!-- Admin -->
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="super_admin_dashboard">Super Admin Dashboard\n%s1$s</string>
+    <string name="hospital_admin_dashboard">Hospital Admin Dashboard\n%1$s</string>
+    <string name="welcome_admin">Welcome, Admin</string>
+    <string name="add_admin">Add Admin</string>
+    <string name="manage_admins">Manage Admins</string>
+    <string name="action_manage_admins">Manage Admins</string>
+    <string name="action_logout">Logout</string>
+    <string name="admin_approval_required">Your admin account is pending approval</string>
+    <string name="admin_approval_granted">Admin access granted</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="add_user">Add User</string>
+    <string name="view_analytics">View Analytics</string>
+    <string name="export_analytics">Export Analytics</string>
+    <string name="analytics_placeholder">Analytics data will be displayed here. This feature is under development.</string>
+    
+    <!-- Hospital -->
+    <string name="hospital">Hospital</string>
+    <string name="register_hospital">Register Hospital</string>
+    <string name="manage_hospitals">Manage Hospitals</string>
+    <string name="add_hospital">Add Hospital</string>
+    
+    <!-- Stock Management -->
+    <!-- Search -->
+    <string name="search_hospitals">Search Hospitals</string>
+    <string name="all_blood_types">All Blood Types</string>
+    <string name="blood_stock_count">%1$s: %2$d units</string>
+    <string name="total_blood_stock">Total stock: %d units</string>
+    <string name="no_hospitals_found">No hospitals found</string>
+    <string name="search_hint">Search by name or location</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    
+    <string name="manage_stock">Manage Stock</string>
+    <string name="stock_management">Stock Management</string>
+    <string name="add_stock">Add Stock</string>
+    <string name="update_stock">Update Stock</string>
+    <string name="stock_updated">Stock updated successfully</string>
+    
+    <!-- Forgot Password Strings -->
+    <string name="checking_email">Checking email...</string>
+    <string name="sending_email">Sending email...</string>
+    <string name="email_not_verified">Please verify your email first. Check your inbox for verification email.</string>
+    <string name="email_not_registered">No account found with this email address.</string>
+    <string name="error_checking_email">Error checking email: %1$s</string>
+    <string name="reset_email_sent">Password reset link sent to %1$s. Please check your inbox and spam folder.</string>
+    <string name="reset_email_failed">Failed to send reset email: %1$s</string>
+    <string name="stock_added">Stock added successfully</string>
+    <string name="stock_removed">%s stock removed</string>
+    <string name="stock_deleted">Stock removed successfully</string>
+    <string name="stock_saved">Stock saved successfully</string>
+    <string name="current_stock">Current Stock</string>
+    <string name="units_format">(%d units)</string>
+    
+    <!-- Blood Types & Units -->
+    <string name="blood_type">Blood Type</string>
+    <string name="select_blood_type">Select blood type</string>
+    <string name="editing_stock">Editing %s stock</string>
+    <string name="units">Units</string>
+    
+    <!-- Validation & Errors -->
+    <string name="email_required">Email is required</string>
+    <string name="invalid_email">Please enter a valid email</string>
+    <string name="password_required">Password is required</string>
+    <string name="password_too_short">Password must be at least 6 characters</string>
+    <string name="passwords_dont_match">Passwords don\'t match</string>
+    <string name="blood_type_required">Please select a blood type</string>
+    <string name="valid_units_required">Please enter a valid number of units</string>
+    <string name="error_invalid_units">Please enter a valid number of units</string>
+    <string name="error_positive_units">Units must be greater than 0</string>
+    <string name="hospital_data_not_found">Hospital data not found</string>
+    <string name="error_negative_units">Units cannot be negative</string>
+    
+    <!-- Error Messages -->
+    <string name="error_occurred">An error occurred. Please try again.</string>
+    <string name="network_error">Network error. Please check your connection.</string>
+    <string name="unknown_error">An unknown error occurred</string>
+    <string name="error_loading_data">Error loading data</string>
+    <string name="error_processing_data">Error processing data</string>
+    <string name="error_processing_request">Error processing request</string>
+    <string name="error_user_not_logged_in">User not logged in</string>
+    <string name="error_loading_blood_types">Error loading blood types</string>
+    <string name="error_loading_stock">Failed to load stock data</string>
+    <string name="error_saving_stock">Error saving stock data</string>
+    <string name="error_updating_stock">Failed to update stock: %s</string>
+    <string name="error_deleting_stock">Failed to delete stock: %s</string>
+    <string name="reset_password_failed">Failed to send reset email: %1$s</string>
+    
+    <!-- Dialogs -->
+    <string name="delete_stock_title">Delete Stock</string>
+    <string name="delete_stock_message">Are you sure you want to delete stock for blood type %s?</string>
+    
+    <!-- Empty States -->
+    <string name="empty_state_icon">Empty state icon</string>
+    <string name="no_users_found">No users found</string>
+    <string name="no_donations_found">No donations found</string>
+    
+    <!-- Donations & Appointments -->
+    <string name="donations">Donations</string>
+    <string name="view_donations">View Donations</string>
+    <string name="upcoming_appointments">Upcoming Appointments</string>
+    <string name="no_upcoming_appointments">No upcoming appointments</string>
+    <string name="no_pending_appointments">No pending appointments</string>
+    <string name="no_confirmed_appointments">No confirmed appointments</string>
+    <string name="no_completed_appointments">No completed appointments</string>
+    <string name="no_cancelled_appointments">No cancelled appointments</string>
+    <string name="no_appointments_found">No appointments found</string>
+    <string name="notes">Notes</string>
+    <string name="created_at">Created At</string>
+    <string name="confirm_status_change">Confirm Status Change</string>
+    <string name="confirm_status_message">Change appointment status to %1$s?</string>
+    <string name="status_updated">Status updated successfully</string>
+    <string name="error_updating_status">Failed to update status: %1$s</string>
+    <string name="donor_name">Donor Name</string>
+    <string name="appointment_status">Status</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel_appointment">Cancel</string>
+    <string name="complete_appointment">Complete</string>
+    
+    <!-- Filter -->
+    <string name="filter">Filter</string>
+    
+    <!-- Products & Orders -->
+    <string name="add_product">Add Product</string>
+    <string name="view_orders">View Orders</string>
+    
+    <!-- Welcome Messages -->
+    <string name="welcome">Welcome</string>
+    <string name="welcome_hospital">Welcome to BloodBud</string>
+    
+    <!-- Hospital List Screen -->
+    <string name="available_hospitals">Available Hospitals</string>
+    <string name="select_date">Select Date</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="retry">Retry</string>
+    
+    <!-- Filter Dialog -->
+    <string name="filter_hospitals">Filter Hospitals</string>
+    <string name="select_state">Select State</string>
+    <string name="select_district">Select District</string>
+    <string name="all_districts">All Districts</string>
+    
+    <!-- Slot Selection -->
+    <string name="select_time_slot">Select Time Slot</string>
+    <string name="no_available_slots">No available slots for this date</string>
+    <string name="fully_booked">Fully Booked</string>
+    <plurals name="available_slots">
+        <item quantity="one">%d slot available</item>
+        <item quantity="other">%d slots available</item>
+    </plurals>
+    
+    <!-- Error Messages -->
+    <string name="error_loading_hospitals">Failed to load hospitals. Please try again.</string>
+    <string name="error_loading_states">Failed to load states. Please try again.</string>
+    <string name="error_loading_districts">Failed to load districts. Please try again.</string>
+    <string name="error_booking_appointment">Failed to book appointment. Please try again.</string>
+    
+    <!-- Success Messages -->
+    <string name="appointment_booked">Appointment booked successfully!</string>
+    
+    <!-- Hospital Details -->
+    <string name="hospital_name">Hospital Name</string>
+    <string name="hospital_address">Address</string>
+    <string name="hospital_contact">Contact</string>
+    <string name="hospital_email">Email</string>
+    <string name="available_slots_count">Available Slots: %d</string>
+    
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_data_available">No data available</string>
+    
+    <!-- Navigation -->
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+    
+    <!-- Time/Date -->
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="yesterday">Yesterday</string>
+    
+    <!-- Status -->
+    <string name="status">Status</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_confirmed">Confirmed</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_completed">Completed</string>
+    
+    <!-- Actions -->
+    <string name="action_book">Book Now</string>
+    <string name="action_view_details">View Details</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    
+    <!-- Validation -->
+    <string name="validation_required">This field is required</string>
+    <string name="validation_invalid_email">Please enter a valid email address</string>
+    <string name="validation_invalid_phone">Please enter a valid phone number</string>
+    
+    <!-- Permissions -->
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_location_required">Location permission is required to find nearby hospitals</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="permission_denied_message">This feature requires location permission. Please enable it in app settings.</string>
+    <string name="open_settings">Open Settings</string>
+    
+    <!-- Hospital Management -->
+    <string name="hospital_deleted">Hospital deleted successfully</string>
+    <string name="delete_hospital">Delete Hospital</string>
+    <string name="delete_hospital_message">Are you sure you want to delete this hospital? This action cannot be undone.</string>
+    
+    <!-- Hospital Approval -->
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="approve_hospital">Approve Hospital</string>
+    <string name="reject_hospital">Reject Hospital</string>
+    <string name="approve_hospital_message">Are you sure you want to approve this hospital?</string>
+    <string name="reject_hospital_message">Are you sure you want to reject this hospital?</string>
+    <string name="hospital_approved">Hospital approved successfully</string>
+    <string name="hospital_rejected">Hospital rejected successfully</string>
+    <string name="approval_error">Error processing approval. Please try again.</string>
+    <string name="view_details">View Details</string>
+    
+    <!-- Empty States -->
+    <string name="no_slots_available">No slots available for the selected date</string>
+    
+    <!-- Booking -->
+    <string name="book_appointment">Book Appointment</string>
+    <string name="appointment_details">Appointment Details</string>
+    <string name="appointment_date">Date</string>
+    <string name="appointment_time">Time</string>
+    <string name="appointment_location">Location</string>
+    <string name="appointment_confirmation">Appointment Confirmation</string>
+    <string name="unknown_donor">Unknown Donor</string>
+    <string name="created_s_ago">Created %s ago</string>
+    <string name="just_now">Just now</string>
+</resources>

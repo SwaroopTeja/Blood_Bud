@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a1",
+    "name": "Admin User",
+    "email": "admin@bloodbud.com",
+    "hospitalId": "h1",
+    "role": "super_admin",
+    "isActive": true
+  },
+  {
+    "id": "a2",
+    "name": "Hospital Admin",
+    "email": "hospital1@bloodbud.com",
+    "hospitalId": "h1",
+    "role": "admin",
+    "isActive": true
+  },
+  {
+    "id": "a3",
+    "name": "Another Admin",
+    "email": "swarooproyal777@gmail.com",
+    "hospitalId": "h2",
+    "role": "admin",
+    "isActive": true
+  }
+]

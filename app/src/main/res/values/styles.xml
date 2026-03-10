@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar title style -->
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Add missing actionBarPaddingTop attribute -->
+    <dimen name="action_bar_padding_top">24dp</dimen>
+    
+    <!-- Add missing style for the toolbar in ManageStockActivity -->
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextAppearance">@style/ToolbarTitle</item>
+        <item name="android:paddingTop">@dimen/action_bar_padding_top</item>
+    </style>
+
+    <!-- Style for dropdown menus -->
+    <style name="DropDownMenuStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="android:dropDownSelector">@color/gray_600</item>
+        <item name="android:popupBackground">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownWidth">match_parent</item>
+        <item name="android:dropDownSelector">@android:color/darker_gray</item>
+    </style>
+</resources>

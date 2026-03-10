@@ -1,0 +1,153 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    
+    "hospitals": {
+      ".read": true,
+      ".write": true,
+      "$hospitalId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['name', 'address', 'contact', 'createdAt'])",
+        "name": {
+          ".validate": "newData.isString() && newData.val().length > 0"
+        },
+        "address": {
+          ".validate": "newData.isString()"
+        },
+        "contact": {
+          ".validate": "newData.isString()"
+        },
+        "totalSlots": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "activeAppointments": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "completedAppointments": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "cancelledAppointments": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "appointments": {
+          ".read": true,
+          ".write": true,
+          "$appointmentId": {
+            ".read": true,
+            ".write": true,
+            ".validate": "newData.hasChildren(['donorId', 'slotId', 'date', 'status', 'bookedAt'])"
+          }
+        },
+        "dailyStats": {
+          ".read": true,
+          ".write": true,
+          "$date": {
+            ".read": true,
+            ".write": true,
+            ".validate": "newData.hasChildren(['totalSlots', 'bookedSlots', 'availableSlots'])",
+            "totalSlots": {
+              ".validate": "newData.isNumber() && newData.val() >= 0"
+            },
+            "bookedSlots": {
+              ".validate": "newData.isNumber() && newData.val() >= 0"
+            },
+            "availableSlots": {
+              ".validate": "newData.isNumber() && newData.val() >= 0"
+            }
+          }
+        }
+      }
+    },
+
+    "appointment_slots": {
+      ".read": true,
+      ".write": true,
+      "$date": {
+        ".read": true,
+        ".write": true,
+        "$hospitalId": {
+          ".read": true,
+          ".write": true,
+          "$slotId": {
+            ".read": true,
+            ".write": true,
+            "currentBookings": {
+              ".validate": "newData.isNumber() && newData.val() >= 0"
+            },
+            "bookedBy": {
+              ".validate": "newData.isString() || newData.hasChildren()"
+            },
+            "bookedBy_donorId": {
+              ".validate": "newData.isNumber() && newData.val() > 0"
+            },
+            "$other": {
+              ".validate": true
+            }
+          }
+        }
+      }
+    },
+
+    "donation_history": {
+      ".read": true,
+      ".write": true,
+      "donors": {
+        "$donorId": {
+          ".read": true,
+          ".write": true,
+          "$date": {
+            "$slotId": {
+              ".validate": "newData.hasChildren(['hospitalId', 'slotId', 'donorId', 'status', 'bookedAt'])",
+              "status": {
+                ".validate": "newData.isString() && (newData.val() === 'BOOKED' || newData.val() === 'COMPLETED' || newData.val() === 'CANCELLED')"
+              },
+              "bookedAt": {
+                ".validate": "newData.isNumber()"
+              }
+            }
+          }
+        }
+      },
+      "hospitals": {
+        "$hospitalId": {
+          ".read": true,
+          ".write": true
+        }
+      }
+    },
+
+    "appointments_active": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["donorId", "hospitalId", "date", "status"],
+      "$appointmentId": {
+        ".read": true,
+        ".write": true
+        }
+      }
+    },
+
+    "appointments_history": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["donorId", "hospitalId", "status", "updatedAt"],
+      "$appointmentId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['donorId', 'hospitalId', 'status'])"
+      }
+    },
+
+    "donations": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["donorId", "hospitalId", "date"],
+      "$donorId": {
+        ".read": true,
+        ".write": true
+      }
+    }
+  }
+}

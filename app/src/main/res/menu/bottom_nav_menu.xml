@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        android:contentDescription="@string/home" />
+
+    <item
+        android:id="@+id/nav_donate"
+        android:icon="@drawable/ic_blood_drop"
+        android:title="@string/donate"
+        android:contentDescription="@string/donate" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        android:contentDescription="@string/search" />
+
+    <item
+        android:id="@+id/nav_appointments"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/appointments"
+        android:contentDescription="@string/appointments" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile"
+        android:contentDescription="@string/profile" />
+</menu>

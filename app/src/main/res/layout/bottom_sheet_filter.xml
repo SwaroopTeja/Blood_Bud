@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter By"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Blood Type Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood Type"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/bloodTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="All Blood Types"
+            android:paddingVertical="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioAPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A+"
+            android:paddingVertical="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioANeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A-"
+            android:paddingVertical="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioBPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B+"
+            android:paddingVertical="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioBNeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B-"
+            android:paddingVertical="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioOPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O+"
+            android:paddingVertical="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioONeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O-"
+            android:paddingVertical="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioABPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AB+"
+            android:paddingVertical="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioABNeg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AB-"
+            android:paddingVertical="8dp"/>
+    </RadioGroup>
+
+    <!-- Location Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- State Dropdown -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Select State">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdownState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:padding="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- City Dropdown -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Select City">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdownCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:padding="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textColor="@color/primary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnApply"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/primary"
+            android:text="@string/apply"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>
